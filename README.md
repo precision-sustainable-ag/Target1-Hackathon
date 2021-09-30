@@ -13,7 +13,7 @@
   - get the RPi IP address
 
 3. Download libraries you should use to control and use the OAK-D camera
-  - (https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/)[https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/]
+  - [https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/](https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/)
 
 4. Install the camera in the tripod and connect it to your RPi.
 
