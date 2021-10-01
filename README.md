@@ -4,7 +4,7 @@ Goal:
 
 To identify the plant category (grass, broadleaf, clover) and to detect the plant size (small, medium, or large). For the plant identification you should use the RGB inference camera, create the pipeline with the camera for using a semantic segmentation model we will provide you (for bonus points you could use your own model). For the plant size you should use the depth camera integrated also with the RGB inference camera.
 
-We are expecting to see into a visualization tool, the detection and the size of the plant in real time.
+A complete visualization tool would identify the plant category and size in real time.
 
 Resources:
 TensorFlow Model (.pb format) (Tensorflow==1.15)
