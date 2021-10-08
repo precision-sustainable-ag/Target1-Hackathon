@@ -7,10 +7,11 @@ To identify the plant category (grass, broadleaf, clover) and to detect the plan
 A complete visualization tool would identify the plant category and size in real time.
 
 ## Resources:
-TensorFlow Model (.pb format) (Tensorflow==1.15)
-RPi 4(8GB) - 128GB (MicroSD Card) with accesories (Adaptor+MicroHDMI+switch)
-1 OAK-D camera with accesories (Adaptor+USBC-3-cable)
-1 Tripod
+
+### Hardware
+- RPi 4(8GB) - 128GB (MicroSD Card) with accesories (Adaptor+MicroHDMI+switch)
+- 1 OAK-D camera with accesories (Adaptor+USBC-3-cable)
+- 1 Tripod
 
 ![](https://lh5.googleusercontent.com/WtM-Kst0wuQMg5hsTHavC5QDaKrxGhIhloG0uFUXzlnPzDLU-qPBP8yCbhBKBzLzAXNYk5wyr--1_pC0aPOGhTyyitEJkM78LOdwoLqFILBSrd4T6dFdYNzS6OEMAHZwSOJtV9k3=s0)
 
@@ -23,6 +24,44 @@ Warning:
 - Power cable (USB-3.5mm) just use the computer port (different that RPis port) or one 5V-2A adaptor.
 - Please do not use cables other than those provided.
 - Ethernet port is used to connect the Machine Motion Driver, you should connect this when you test your deployment with the BenchBot.
+
+### Software
+
+- TensorFlow Model - DeepLabV3+, input: 512x512 (.pb format) (Tensorflow==1.15) (Large and small versions).
+- Intermediate representation (bin & xml format).
+- Compiled model (blob format) to use directly with the MyriadX.
+
+#### Machine Motion Scripts
+
+Use any of the .py scripts included in this section to controll the MM
+
+> ### **mm_control.py**
+>
+>> Use -d plus a distance in mm to move the camera to the right (positive direction). Use -hm to send the camera home (negative direction). This script is mostly meant to make videos since it moves the plate very slowly.
+>>
+>> ##### **Example** 
+>>
+>>`python3 mm_control.py -d 200`
+>>
+>> Will move the camera 200 mm in the positive direction
+
+
+> ### **set_distance.py**
+>
+>> This script will ask how much do you want to move (in mm) and in which direction, positive (p) or negative (n). The speed at which the plate moves is higher than for the mm_cotrol.py script. Better suited for taking static pictures or for positioning the camera in a desired place. 
+>>
+>> ##### **On the terminal** 
+>>
+>>`python3 set_distance.py`
+
+
+> ### **going_home.py**
+>
+>> This script sends the camera home at a fast speed.
+>>
+>> ##### **On the terminal** 
+>>
+>>`python3 going_home.py`
 
 1. The RPis are already registered on the **ncsu** WiFi Network, you could see the Static IP address for each kit on the canakit box.
 
