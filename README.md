@@ -1,4 +1,4 @@
-# Target1-Hackathon
+# Target1|Hardware
 
 ## Goal: 
 
