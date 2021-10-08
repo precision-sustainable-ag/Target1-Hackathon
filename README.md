@@ -28,12 +28,12 @@ Warning:
 ### Software
 
 - TensorFlow Model - DeepLabV3+, input: 512x512 (.pb format) (Tensorflow==1.15) (Large and small versions).
-- Intermediate representation (bin & xml format).
+- Intermediate representation (bin & xml format). For mor information see: OpenVino documentation.
 - Compiled model (blob format) to use directly with the MyriadX.
 
 #### Machine Motion Scripts
 
-Use any of the .py scripts included in this section to controll the MM
+Use any of the .py scripts included in this section to controll the MM. You could find these scripts in **/home/pi**.
 
 > ##### **mm_control.py**
 >
@@ -69,7 +69,7 @@ Use any of the .py scripts included in this section to controll the MM
 
 2. If you are note able to connect please contact one of your mentors and check the connectivity using monitor, keyboard and mouse.
 
-3. The depthai library is preinstalled in the RPi and the cameras are precalibrated, you are able to run the demo file **/home/pi/depthai/depthai_demo.py**
+3. The depthai library is preinstalled in the RPi and the cameras are precalibrated, you are able to run the demo file **/home/pi/depthai/depthai_demo.py**. A good explanation of this demo [here](https://github.com/luxonis/depthai) in the Readme.md file.
 
 4. Please follow the instructions and documentation of [Luxonis' webpage](https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/) to understand better the camera uses.
 
