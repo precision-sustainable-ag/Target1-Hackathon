@@ -35,33 +35,35 @@ Warning:
 
 Use any of the .py scripts included in this section to controll the MM
 
-> ### **mm_control.py**
+> ##### **mm_control.py**
 >
 >> Use -d plus a distance in mm to move the camera to the right (positive direction). Use -hm to send the camera home (negative direction). This script is mostly meant to make videos since it moves the plate very slowly.
 >>
->> ##### **Example** 
+>> ###### **Example** 
 >>
 >>`python3 mm_control.py -d 200`
 >>
 >> Will move the camera 200 mm in the positive direction
 
 
-> ### **set_distance.py**
+> ##### **set_distance.py**
 >
 >> This script will ask how much do you want to move (in mm) and in which direction, positive (p) or negative (n). The speed at which the plate moves is higher than for the mm_cotrol.py script. Better suited for taking static pictures or for positioning the camera in a desired place. 
 >>
->> ##### **On the terminal** 
+>> ###### **On the terminal** 
 >>
 >>`python3 set_distance.py`
 
 
-> ### **going_home.py**
+> ##### **going_home.py**
 >
 >> This script sends the camera home at a fast speed.
 >>
->> ##### **On the terminal** 
+>> ###### **On the terminal** 
 >>
 >>`python3 going_home.py`
+
+## Something else ...
 
 1. The RPis are already registered on the **ncsu** WiFi Network, you could see the Static IP address for each kit on the canakit box.
 
@@ -70,6 +72,10 @@ Use any of the .py scripts included in this section to controll the MM
 3. The depthai library is preinstalled in the RPi and the cameras are precalibrated, you are able to run the demo file **/home/pi/depthai/depthai_demo.py**
 
 4. Please follow the instructions and documentation of [Luxonis' webpage](https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/) to understand better the camera uses.
+
+5. You will have until Sunday at 2 pm to submit your results, which will be verified directly on the Benchbot.
+
+6. You must return all the hardware resources delivered at the beginning of the Hackathon.
 
 5. Happy hacking!!!
 
